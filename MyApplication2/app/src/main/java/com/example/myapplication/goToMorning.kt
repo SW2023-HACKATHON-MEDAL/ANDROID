@@ -9,6 +9,9 @@ import kotlinx.android.synthetic.main.moring_medi.*
 import java.util.ArrayList
 
 class goToMorning : AppCompatActivity()  {
+    companion object {
+        const val REQUEST_CODE = 101
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.moring_medi)

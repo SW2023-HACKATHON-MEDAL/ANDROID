@@ -15,18 +15,19 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.ContextCompat.startActivity
 import com.example.myapplication.MainActivity
 import com.example.myapplication.R
+import com.example.myapplication.goToMorning
 
 class MyAlarmReceiver: BroadcastReceiver() {
     val CHANNEL_ID = "Test"
     override fun onReceive(context: Context, intent: Intent) {
-        if(intent.extras?.get("code") == MainActivity.REQUEST_CODE) {
+        if(intent.extras?.get("code") == goToMorning.REQUEST_CODE) {
             var count = intent.getIntExtra("count", 0)
             Log.d("myLog", "$count")
 
 
             createNotificationChannel(context)
 
-            val intent = Intent(context, MainActivity::class.java).apply {
+            val intent = Intent(context, goToMorning::class.java).apply {
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             }
             val pendingIntent = PendingIntent.getActivity(context, 101, intent, 0)

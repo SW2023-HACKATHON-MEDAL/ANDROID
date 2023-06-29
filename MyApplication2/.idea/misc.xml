@@ -3,7 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/layout/setting_time.xml" value="0.1" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/border.xml" value="0.1195" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/border2.xml" value="0.1905" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/grade.xml" value="0.1905" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/grade2.xml" value="0.1905" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1905" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/loginwhitebutton.xml" value="0.1905" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/recdin.xml" value="0.1195" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/reclun.xml" value="0.1195" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/recmor.xml" value="0.1195" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/rounded_button.xml" value="0.1195" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/roundformat.xml" value="0.1195" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/drawable/roundloginbut.xml" value="0.1905" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/layout/dinner_medi.xml" value="0.2" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/layout/listview_component.xml" value="0.264" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/layout/lunch_medi.xml" value="0.264" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/layout/moring_medi.xml" value="0.264" />
+        <entry key="..\:/Users/user/Desktop/ANDROID/MyApplication2/app/src/main/res/layout/setting_time.xml" value="0.264" />
         <entry key="..\:/Users/user/Desktop/MyApplication2/app/src/main/res/layout/activity_main.xml" value="0.11423505572441743" />
         <entry key="..\:/Users/user/Desktop/MyApplication2/app/src/main/res/layout/activity_signup.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/user/Desktop/MyApplication2/app/src/main/res/layout/dinner_medi.xml" value="0.22826086956521738" />

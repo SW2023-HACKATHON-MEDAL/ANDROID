@@ -1,38 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:gravity="center">
-
-    <Switch
-        android:id="@+id/switch01"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/main_top">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:textSize="16sp"
-        android:text="Time" />
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:id="@+id/morningBtn"
+            android:orientation="horizontal"
+            android:background="@drawable/recmor">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="아침"
+                android:textSize="30sp"
+                android:gravity="center">
+            </TextView>
+            <Switch
+                android:padding="20dp"
+                android:id="@+id/switch01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="Time" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="10dp"
+            android:orientation="horizontal"/>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:id="@+id/LunchBtn"
+            android:text="LUNCH"
+            android:orientation="horizontal"
+            android:background="@drawable/reclun">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="점심"
+                android:textSize="30sp"
+                android:gravity="center">
+            </TextView>
+            <Switch
+                android:padding="20dp"
+                android:id="@+id/switch02"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="Time" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="10dp"
+            android:orientation="vertical" />
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:id="@+id/DinnerBtn"
+            android:text="DINNER"
+            android:orientation="horizontal"
+            android:background="@drawable/recdin">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="저녁"
+                android:textSize="30sp"
+                android:gravity="center">
+            </TextView>
+            <Switch
+                android:padding="20dp"
+                android:id="@+id/switch03"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="Time" />
+        </LinearLayout>
+    </LinearLayout>
 
-
-    <Button
-       android:layout_width="300dp"
-       android:layout_height="200dp"
-       android:id="@+id/morningBtn"
-       android:text="MORNING"
-       ></Button>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:id="@+id/LunchBtn"
-        android:text="LUNCH"
-        ></Button>
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:id="@+id/DinnerBtn"
-        android:text="DINNER"
-        ></Button>
 </LinearLayout>
