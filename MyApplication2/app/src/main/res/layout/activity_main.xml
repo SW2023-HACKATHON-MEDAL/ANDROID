@@ -8,7 +8,16 @@
     android:orientation="vertical"
     android:gravity="center">
 
-   <Button
+    <Switch
+        android:id="@+id/switch01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:text="Time" />
+
+
+    <Button
        android:layout_width="300dp"
        android:layout_height="200dp"
        android:id="@+id/morningBtn"
