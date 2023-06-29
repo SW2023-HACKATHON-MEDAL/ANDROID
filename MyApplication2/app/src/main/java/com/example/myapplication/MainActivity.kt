@@ -10,19 +10,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        morningBtn.setOnClickListener {
+        morningBtn.setOnClickListener{
             val intent = Intent(this, goToMorning::class.java)
-            startActivity(intent)
+            startActivity(intent);
         }
-
-        lunchBtn.setOnClickListener {
+        LunchBtn.setOnClickListener{
             val intent = Intent(this, goToLunch::class.java)
-            startActivity(intent)
+            startActivity(intent);
         }
-
-        dinnerBtn.setOnClickListener {
+        DinnerBtn.setOnClickListener{
             val intent = Intent(this, goToDinner::class.java)
-            startActivity(intent)
+            startActivity(intent);
         }
     }
 }

@@ -19,11 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".goToMorning"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".goToLunch"
+            android:name=".MainActivity"
             android:exported="false">
         </activity>
         <activity
@@ -31,15 +27,17 @@
             android:exported="false">
         </activity>
         <activity
-            android:name=".SignupActivity"
+            android:name=".goToLunch"
             android:exported="false">
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".goToMorning"
             android:exported="false">
         </activity>
-
-
+        <activity
+            android:name=".SignupActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>
