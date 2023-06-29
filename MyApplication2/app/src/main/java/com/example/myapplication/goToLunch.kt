@@ -15,12 +15,12 @@ class goToLunch : AppCompatActivity() {
         setContentView(R.layout.lunch_medi)
 
         val item_list2 = ArrayList<medicine>()
-        item_list2.add(medicine("이건", "sss", "sss", "sss"))
-        item_list2.add(medicine("점심", "aaa", "aaa", "aaa"))
-        item_list2.add(medicine("약", "bbb", "aaa", "aaa"))
+//        item_list2.add(medicine("이건", "sss", "sss", "sss"))
+//        item_list2.add(medicine("점심", "aaa", "aaa", "aaa"))
+//        item_list2.add(medicine("약", "bbb", "aaa", "aaa"))
 
-        val adp2 = MainAdapter(item_list2, LayoutInflater.from(this@goToLunch))
-        recyclerviewL.adapter = adp2
-        recyclerviewL.layoutManager = LinearLayoutManager(this@goToLunch)
+//        val adp2 = MainAdapter(item_list2, LayoutInflater.from(this@goToLunch))
+//        recyclerviewL.adapter = adp2
+//        recyclerviewL.layoutManager = LinearLayoutManager(this@goToLunch)
     }
 }

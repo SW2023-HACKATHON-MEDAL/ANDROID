@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import RetrofitAPI
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -24,9 +25,29 @@ class goToMorning : AppCompatActivity()  {
         setContentView(R.layout.moring_medi)
         var morningCheck :Int
         val item_list1 = ArrayList<medicine>()
-        item_list1.add(medicine("이건", "sss", "sss", "sss"))
+        val retrofit = RetrofitClient.getInstance()
+        val service = retrofit.create(RetrofitAPI::class.java)
+        val m=0
+        val typeDTO : TypeDTO = TypeDTO(m)
+        service.InfoAlarm(typeDTO).enqueue(object: Callback<List<medicine>>{
+            override fun onResponse(call: Call<List<medicine>>, response: Response<List<medicine>>) {
+                val res = response.body()
+                Log.d("log : ", res.isNullOrEmpty().toString())
+                if(!res.isNullOrEmpty())
+                    res.forEach{
+                        item_list1.add(it)
+                    }
+                else{
+                    //showAlert("아이디 또는 비밀번호가 다릅니다")
+                }
+            }
 
-        val adp = MainAdapter(item_list1, LayoutInflater.from(this@goToMorning))
+            override fun onFailure(call: Call<List<medicine>>, t: Throwable) {
+                Log.d("Failure", t.localizedMessage)
+            }
+        })
+
+        val adp = MainAdapter(item_list1, LayoutInflater.from(this@goToMorning), this@goToMorning)
         recyclerview.adapter = adp
         recyclerview.layoutManager = LinearLayoutManager(this@goToMorning)
 

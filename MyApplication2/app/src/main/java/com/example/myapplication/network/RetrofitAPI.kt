@@ -14,4 +14,7 @@ interface RetrofitAPI {
 
     @POST("/take-pill")
     fun TakePill(@Body typeDTO: TypeDTO) : Call<Boolean>
+
+    @POST("/info-alarm")
+    fun InfoAlarm(@Body typeDTO: TypeDTO): Call<List<medicine>>
 }

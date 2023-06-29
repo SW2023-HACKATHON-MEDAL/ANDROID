@@ -3,6 +3,6 @@ package com.example.myapplication.dto
 import com.google.gson.annotations.SerializedName
 
 data class TypeDTO(
-    @SerializedName("password")
+    @SerializedName("type")
     var type: Int
 )
