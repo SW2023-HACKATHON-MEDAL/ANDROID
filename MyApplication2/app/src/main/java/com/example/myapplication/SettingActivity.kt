@@ -14,16 +14,15 @@ class SettingActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.setting_time)
         var timeString: String=""
-
+        var intent = Intent(this, MainActivity::class.java)
         morningTimeInput.setOnClickListener {
             val cal = Calendar.getInstance()
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
                 timeString = "${hourOfDay}:${minute}"
                 morningTime.text = timeString
-//                intent.putExtra("mt",timeString)
+                intent.putExtra("mt",timeString)
             }
             TimePickerDialog(this,android.R.style.Theme_Holo_Light_Dialog_NoActionBar, timeSetListener, cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE),true).show()
-
         }
 
         lunchTimeInput.setOnClickListener {
@@ -49,7 +48,6 @@ class SettingActivity : AppCompatActivity(){
         }
 
         gotoMainBtn.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent);
         }
     }

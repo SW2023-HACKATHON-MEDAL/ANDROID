@@ -1,7 +1,4 @@
-import com.example.myapplication.dto.LoginDTO
-import com.example.myapplication.dto.LoginResponseDTO
-import com.example.myapplication.dto.SignupDTO
-import com.example.myapplication.dto.SignupResponseDTO
+import com.example.myapplication.dto.*
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.Field
@@ -14,4 +11,7 @@ interface RetrofitAPI {
 
     @POST("/join")
     fun Signup(@Body signupDTO: SignupDTO) : Call<Boolean>
+
+    @POST("/take-pill")
+    fun TakePill(@Body typeDTO: TypeDTO) : Call<Boolean>
 }
