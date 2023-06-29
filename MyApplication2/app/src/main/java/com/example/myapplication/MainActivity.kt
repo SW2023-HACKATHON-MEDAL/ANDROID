@@ -10,6 +10,8 @@ import android.os.SystemClock
 import androidx.core.content.edit
 import com.example.myapplication.receiver.MyAlarmReceiver
 import kotlinx.android.synthetic.main.activity_main.*
+import java.time.OffsetDateTime
+import java.time.ZoneOffset
 
 class MainActivity : AppCompatActivity() {
     companion object {
@@ -31,6 +33,8 @@ class MainActivity : AppCompatActivity() {
             it.putExtra("count", 10)
             PendingIntent.getBroadcast(this, REQUEST_CODE, it, 0)
         }
+
+//        val morning = OffsetDateTime.of(2023, 6, 29, 9, 0, 0, 0,0)
 
         switch01.setOnCheckedChangeListener { _, isCheck ->
             setting.edit {

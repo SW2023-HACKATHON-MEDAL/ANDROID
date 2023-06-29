@@ -26,7 +26,7 @@ class LoginActivity : AppCompatActivity() {
             val pw = findViewById<EditText>(R.id.text_pw)
 
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, SettingActivity::class.java)
             startActivity(intent);
         }
     }

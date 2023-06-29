@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/morningTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="아침시간"
+        android:ems="10"/>
+    <Button
+        android:id="@+id/morningTimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="아침시간 입력"
+        android:ems="10"
+        android:onClick="onButtonSelectTimeClick"/>
+
+    <TextView
+        android:id="@+id/lunchTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="점심시간"
+        android:ems="10"/>
+    <Button
+        android:id="@+id/lunchTimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="점심시간 입력"
+        android:ems="10"
+        android:onClick="onButtonSelectTimeClick"/>
+    <TextView
+        android:id="@+id/dinnerTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="저녁시간"
+        android:ems="10"/>
+    <Button
+        android:id="@+id/dinnerTimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="저녁시간 입력"
+        android:ems="10"
+        android:onClick="onButtonSelectTimeClick"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:id="@+id/gotoMainBtn"
+        android:text="알림 목록으로"
+        ></Button>
+
+</LinearLayout>
