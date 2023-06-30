@@ -22,12 +22,14 @@ class MainAdapter(
         val name: TextView
         val color: TextView
         val medicineImage : ImageView
+        val medicineShape : TextView
 
 
         init {
             name = itemView.findViewById(R.id.medicineName)
             color = itemView.findViewById(R.id.medicineColor)
             medicineImage = itemView.findViewById(R.id.medicineImage)
+            medicineShape = itemView.findViewById(R.id.medicineShape)
 //            shape =
 //            texture
 //            storeImgName
@@ -50,5 +52,7 @@ class MainAdapter(
         Glide.with(this@MainAdapter.context).load(medicineList.get(position).storeImgName).into(holder.medicineImage) // 이미지를 넣을 뷰
         holder.name.setText(medicineList.get(position).name)
         holder.color.setText(medicineList.get(position).color)
+        holder.medicineShape.setText(medicineList.get(position).shape)
+
     }
 }

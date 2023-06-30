@@ -73,7 +73,7 @@ class SignupActivity : AppCompatActivity() {
     }
 
     fun moveMain(){
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, SettingActivity::class.java)
         startActivity(intent);
     }
 
